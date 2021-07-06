@@ -1,6 +1,6 @@
-[![role](https://img.shields.io/ansible/role/54870)](https://galaxy.ansible.com/trallnag/pyenv)
-[![quality](https://img.shields.io/ansible/quality/54870)](https://galaxy.ansible.com/trallnag/pyenv)
-[![downloads](https://img.shields.io/ansible/role/d/54870?label=downloads)](https://galaxy.ansible.com/trallnag/pyenv)
+[![role](https://img.shields.io/ansible/role/55570)](https://galaxy.ansible.com/trallnag/pyenv)
+[![quality](https://img.shields.io/ansible/quality/55570)](https://galaxy.ansible.com/trallnag/pyenv)
+[![downloads](https://img.shields.io/ansible/role/d/55570?label=downloads)](https://galaxy.ansible.com/trallnag/pyenv)
 
 # Ansible Role `pyenv`
 
