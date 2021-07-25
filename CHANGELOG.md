@@ -11,6 +11,12 @@ specification.
 
 * Nothing
 
+## [1.0.1] 2021-07-25
+
+### Changed
+
+* Improved docs.
+
 ## [1.0.0] 2021-07-06
 
 * Intial release.
