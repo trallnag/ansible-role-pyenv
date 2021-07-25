@@ -9,7 +9,13 @@ specification.
 
 ## Unreleased
 
-* Nothing
+* Nothing.
+
+## [1.1.0] 2021-07-25
+
+### Added
+
+* Install and enable global Python version.
 
 ## [1.0.1] 2021-07-25
 
@@ -23,4 +29,4 @@ specification.
 
 ## Unreleased
 
-* Nothing
+* Nothing.

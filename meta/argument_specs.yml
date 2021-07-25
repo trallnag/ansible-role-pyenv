@@ -1,0 +1,10 @@
+argument_specs:
+  main:
+    short_description: Main entry point for the "{{ role_name }}" role
+    options:
+      pyenv_global_python_version:
+        default: 3.9.6
+        type: raw
+        required: false
+        description: >-
+          Poetry version to install and activate globally.

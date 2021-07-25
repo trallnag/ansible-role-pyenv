@@ -16,10 +16,18 @@ Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/pyenv).
 * Installs Pyenv via the official installer.
 * Adds init blocks to `.bashrc` and `.profile`.
 * Installs `pyenv-virtualenv` plugin.
+* Installs a global version of Python and enables it.
 
 ## Role Variables
 
-None.
+```yaml
+pyenv_global_python_version:
+  default: 3.9.6
+  type: raw
+  required: false
+  description: >-
+    Poetry version to install and activate globally.
+```
 
 ## Example Playbook
 
@@ -31,6 +39,8 @@ None.
     rolespec_validate: true
   roles:
     - name: trallnag.pyenv
+      vars:
+        pyenv_global_python_version: 3.9.6
 ```
 
 ## Special Requirements
