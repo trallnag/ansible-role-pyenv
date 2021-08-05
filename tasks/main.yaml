@@ -1,25 +1,24 @@
+- name: Fail when OS family not supported and no override configured
+  when: >-
+    (pyenv_os_pkgs | length < 1)
+    and (ansible_os_family | lower not in pyenv_os_families)
+  fail:
+    msg: The target OS family is not Debian nor RedHat. Use var 'pyenv_os_pkgs'.
+
+- name: Include vars depending on OS family and override
+  when: (pyenv_os_pkgs is not iterable) or (pyenv_os_pkgs | length < 1)
+  include_vars: "{{ lookup('first_found', params) }}"
+  vars:
+    params:
+      files:
+        - "os-{{ ansible_os_family | lower }}.yaml"
+      paths:
+        - vars
+
 # See <https://github.com/pyenv/pyenv/wiki#suggested-build-environment>.
-- name: Install build dependencies for compiling Python versions
-  apt:
-    name:
-      - make
-      - build-essential
-      - libssl-dev
-      - zlib1g-dev
-      - libbz2-dev
-      - libreadline-dev
-      - libsqlite3-dev
-      - wget
-      - curl
-      - llvm
-      - libncurses5-dev
-      - xz-utils
-      - tk-dev
-      - libxml2-dev
-      - libxmlsec1-dev
-      - libffi-dev
-      - liblzma-dev
-    install_recommends: false
+- name: Install OS packages
+  package:
+    name: "{{ pyenv_os_pkgs }}"
     state: present
   become: true
 

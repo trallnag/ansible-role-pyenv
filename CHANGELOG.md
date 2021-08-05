@@ -11,6 +11,12 @@ specification.
 
 * Nothing.
 
+## [1.2.0] 2021-08-05
+
+### Added
+
+* Explicit support of RedHat and Debian OS families.
+
 ## [1.1.0] 2021-07-25
 
 ### Added
@@ -26,7 +32,3 @@ specification.
 ## [1.0.0] 2021-07-06
 
 * Intial release.
-
-## Unreleased
-
-* Nothing.

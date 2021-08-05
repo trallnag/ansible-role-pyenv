@@ -1,6 +1,6 @@
 argument_specs:
   main:
-    short_description: Main entry point for the "{{ role_name }}" role
+    short_description: Main entry point
     options:
       pyenv_global_python_version:
         default: 3.9.6
@@ -8,3 +8,14 @@ argument_specs:
         required: false
         description: >-
           Poetry version to install and activate globally.
+
+      pyenv_os_pkgs:
+        default: []
+        type: list
+        elements: str
+        required: false
+        description: >-
+          This role only installs the correct OS dependencies for the OS families
+          Debian (for example Ubuntu) and RedHat (for example Fedora). If you
+          are targeting another OS family you must list all required packages
+          or a task in this role will fail.

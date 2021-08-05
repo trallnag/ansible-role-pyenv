@@ -2,7 +2,7 @@ galaxy_info:
   author: Tim Schwenke
   namespace: trallnag
   role_name: pyenv
-  description: Installs pyenv on Ubuntu and Debian
+  description: Installs pyenv for Bash on Linux
   license: Apache-2.0
   company: none
   min_ansible_version: 2.5
@@ -14,8 +14,16 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+    - name: RedHat
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
 
   galaxy_tags:
+    - system
+    - development
+    - packaging
     - python
-    - ubuntu
-    - debian
+    - bash

@@ -1,0 +1,3 @@
+pyenv_os_families:
+  - debian
+  - redhat
